@@ -5,16 +5,23 @@ const usuarioController =
     require("../projeto_ds_node/Controllers/UsuarioController");
 
 router.post(
-    "/usuario",
+    "/usuarios",
     usuarioController.criarUsuario
 );
 
 router.get(
-   "/usuarios",
+    "/usuarios",
     usuarioController.consultarUsuarios
 );
 
 router.post(
-    "/usuarios",
+    "/usuaros",
     usuarioController.consultarUsuarios
 );
+
+router.post(
+    "/login",
+    usuarioController.login.Usuario
+);
+
+module.exports = routes;
